@@ -1,4 +1,4 @@
-package org.example;
+package com.example;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,12 +15,14 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class MainPageTest {
 
     private WebDriver driver;
+
+    public static WebDriver getDriver() {
+    }
 
     @BeforeEach
     public void setUp() {
